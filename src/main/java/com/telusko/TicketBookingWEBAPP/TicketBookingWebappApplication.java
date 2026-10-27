@@ -8,7 +8,10 @@ public class TicketBookingWebappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TicketBookingWebappApplication.class, args);
+
 		String s = "Hello";
+		int i = 15;
+
 	}
 
 }
