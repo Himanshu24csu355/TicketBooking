@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Information</title>
+</head>
+
+<body>
+
+    <h1>Ticket Information</h1>
+
+    <table border="1">
+
+        <tr>
+            <th>Ticket Number</th>
+
+            <td th:text="${ticket.ticketNumber}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+
+            <td th:text="${ticket.name}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Departure</th>
+
+            <td th:text="${ticket.departure}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Arrival</th>
+
+            <td th:text="${ticket.arrival}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Date of Journey</th>
+
+            <td th:text="${ticket.dateOfJourney}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Status</th>
+
+            <td th:text="${ticket.status}">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Ticket Price</th>
+
+            <td th:text="${ticket.ticketPrice}">
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <a th:href="@{/passenger-form}">
+        Book Another Ticket
+    </a>
+
+</body>
+
+</html>
